@@ -1,5 +1,5 @@
-import { defineFunction } from '@aws-amplify/backend';
+import type { PostConfirmationTriggerHandler } from "aws-lambda";
 
-export const postConfirmation = defineFunction({
-  name: 'post-confirmation',
-});
+export const handler: PostConfirmationTriggerHandler = async (event) => {
+  return event;
+};
